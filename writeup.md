@@ -21,24 +21,24 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, 
 
-[image2]: ./step_images_output/gray.png "Grayscale"
+[image2]: ../step_images_output/gray.png "Grayscale"
 
 then I applied Gasussion filter to the image to make the image smoother,
 
-[image3]: ./step_images_output/gaussian.png "Gaussian"
+[image3]: ../step_images_output/gaussian.png "Gaussian"
 
 Then I used Canny algorithm to detect edges in the image. 
 
-[image4]: ./step_images_output/canny.png "Canny Edges"
+[image4]: ../step_images_output/canny.png "Canny Edges"
 
 Because there are many non-insterested edges in the processed image, I clipped necessary area using region_of_interest()
 function. 
 
-[image4]: ./step_images_output/interest.png "Canny Edges"
+[image4]: ../step_images_output/interest.png "Canny Edges"
 
 To draw the lane based on the edges in the image, I leverage Hough Transformation and merge the lane image with origin image finallly. 
 
-[image5]: ./step_images_output/lines.png "Lane Lines"
+[image5]: ../step_images_output/lines.png "Lane Lines"
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by finding the left/right lane(line) coefficients and drawing the lanes by passing 
 absolute points with respected to the image.
